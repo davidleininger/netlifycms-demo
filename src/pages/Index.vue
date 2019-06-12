@@ -12,6 +12,7 @@
       <div class="feed">
         <div v-for="post in $page.posts.edges" :key="post.path">
           <g-link :to="post.node.path"><h3>{{ post.node.title }}</h3></g-link>
+          <p>{{ post.node.timeToRead }} min read</p>
           <p>{{ post.node.excerpt }}</p>
         </div>
       </div>
@@ -31,6 +32,7 @@ query Posts ($page: Int) {
       node {
         title
         date
+        timeToRead
         excerpt
         path
       }
