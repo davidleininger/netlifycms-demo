@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <h1>{{ $page.post.title }}</h1>
+    <p>{{ $page.post.timeToRead }}</p>
     <div class="post" v-html="$page.post.content" />
   </Layout>
 </template>
@@ -10,6 +11,7 @@ query Post($path: String!) {
   post(path: $path) {
     title
     date (format: "MMMM D, Y")
+    timeToRead
     content
   }
 }
