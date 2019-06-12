@@ -3,19 +3,22 @@ title: Markdown styling
 excerpt: Markdown post content stress test. See how your post content is being styled.
 date: 2019-06-07T11:34:39.362Z
 ---
-
 **Netlify CMS creates and edits markdown files in your GitHub Repo. It's a super easy way to have a free custom CMS for page contnet.**
 
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible.Readability, however, is emphasized above all else. A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions.
 
-**Haxx0r** ipsum _then_ less spoof ifdef ~~boolean~~ bang injection while it's a _**feature**_. Finally back door bit gc client access suitably small values injection protocol ack loop. Bang public echo baz server packet sniffer syn cd.
+**Haxx0r** ipsum _then_ less spoof ifdef ~~boolean~~ bang injection while it's a **_feature_**. Finally back door bit gc client access suitably small values injection protocol ack loop. Bang public echo baz server packet sniffer syn cd.
 
-Frack highjack float buffer [function protocol](https://gridsome.org) I'm compiling. Root leet all your base are belong to us char protected ascii *.* regex semaphore root bin ip snarf foo <mark>Linus Torvalds</mark>. Cache Dennis Ritchie gc `echo endif` script kiddies **public** new tera brute force fork fopen spoof bytes tcp.
+Frack highjack float buffer [function protocol](https://gridsome.org) I'm compiling. Root leet all your base are belong to us char protected ascii _._ regex semaphore root bin ip snarf foo <mark>Linus Torvalds</mark>. Cache Dennis Ritchie gc `echo endif` script kiddies **public** new tera brute force fork fopen spoof bytes tcp.
 
 ## Heading 2
+
 ### Heading 3
+
 #### Heading 4
+
 ##### Heading 5
+
 ###### Heading 6
 
 Heading 1 is the title of this page. You should only use it once in a document.
@@ -33,10 +36,10 @@ When you paste in a URL like so: https://gridsome.org, it will be automatically 
 
 ## Unordered list
 
-- boolean
-- stack
-- foad
-- tarball
+* boolean
+* stack
+* foad
+* tarball
 
 ## A definition list
 
@@ -52,7 +55,7 @@ This list is created using `<dl>`, `<dt>`, and `<dd>` HTML tags.
 
 ## Blockquotes
 
-> Trojan horse protected afk finally irc ip new kilo fork boolean. Int ack long less lib crack emacs gnu foo *.* segfault suitably small values ascii rsa throw void I'm sorry Dave
+> Trojan horse protected afk finally irc ip new kilo fork boolean. Int ack long less lib crack emacs gnu foo _._ segfault suitably small values ascii rsa throw void I'm sorry Dave
 
 ## Code
 
@@ -95,7 +98,7 @@ Of course, it also styles `inline code blocks`.
 
 Here's a local image:
 
-![iMac rear photo by Georgie Cobbs on Unsplash](/images/posts/georgie-cobbs-467924-unsplash.jpg)
+![ Photo by Priscilla Du Preez on Unsplash](/uploads/priscilla-du-preez-110829-unsplash.jpg)
 
 As you just saw, Gridsome loads it only when it enters your viewport.
 
