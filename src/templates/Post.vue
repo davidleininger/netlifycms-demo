@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>{{ $page.post.title }}</h1>
-    <div v-html="$page.post.content" />
+    <div class="post" v-html="$page.post.content" />
   </Layout>
 </template>
 
@@ -26,10 +26,10 @@ export default {
 }
 </script>
 
-<style scoped>
-img{
+<style>
+.post img{
   height: auto;
   max-width: 100%;
+  width: 100%;
 }
-
 </style>
