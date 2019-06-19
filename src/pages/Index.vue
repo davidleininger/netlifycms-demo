@@ -15,6 +15,10 @@
           <p>{{ post.node.timeToRead }} min read</p>
           <p>{{ post.node.excerpt }}</p>
         </div>
+        <Pagination
+          v-if="$page.posts.pageInfo.totalPages > 1"
+          :current-page="$page.posts.pageInfo.currentPage"
+          :total-pages="$page.posts.pageInfo.totalPages" />
       </div>
     </main>
   </Layout>
@@ -22,7 +26,7 @@
 
 <page-query>
 query Posts ($page: Int) {
-  posts: allPost (sortBy: "date", order: DESC, perPage: 3, page: $page) {
+  posts: allPost (sortBy: "date", order: DESC, perPage: 1, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
@@ -42,7 +46,13 @@ query Posts ($page: Int) {
 </page-query>
 
 <script>
+import Pagination from '@/components/PaginationPosts'
+
 export default {
+  name: 'Landing',
+  components: {
+    Pagination
+  },
   metaInfo: {
     title: 'Netlify CMS Starter'
   }
