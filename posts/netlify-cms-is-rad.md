@@ -3,7 +3,7 @@ title: Netlify CMS is Rad
 excerpt: >-
   Use Netlify CMS with any static site generator for a faster and more flexible
   web project
-date: 2019-06-19T22:49:46.363Z
+date: 2019-06-09T05:00:00.000Z
 ---
 ## Static + content management = ♥
 
